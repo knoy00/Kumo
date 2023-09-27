@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+}
+
+.logo img{
+    max-width: 120px;
+    height: auto;
+}
+
+.navmenu{
+    display: flex;
+}
+
+.navmenu a{
+    color: #2c2c2c;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+    text-decoration: none;
+}
+
+#list {
+    list-style-type: none;
+}
+
+.navmenu a:hover{
+    color: rgb(244, 12, 12);
+}
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+}
+.nav-icon i {
+    margin: 20px;
+    font-size: 20px;
+    transition: all .42s ease;
+    color: #2c2c2c;
+}
+
+.nav-icon i:hover {
+    transform: scale(1.1);
+    color: #e30000;
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: grey;
+    z-index: 10001;
+    cursor: pointer;
+}
+
+#menu-icon i:hover{
+    transform: none;
+    color: #2c2c2c;
+}
+
+section {
+    padding: 10% 10%;
+}
+
+.main-home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/banner-3.png);
+    background-position: center;
+    background-size: cover;
+    
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+
+.main-text h5{
+    color: #e3075b;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.main-text h1{
+    color: #313031;
+    font-size: 65px;
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 1.1;
+    margin: 6px 0 10px;
+}
+
+.main-text p{
+    color: #333c56;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.main-btn {
+    display: inline-block;
+    color: #111;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid #111;
+    padding: 12px 25px;
+    transition: all .42s ease;
+    text-decoration: none;
+    border-radius: 1px;
+}
+
+.main-btn:hover{
+    color: white;
+    background: black;
+}
+
+.main-btn i {
+    vertical-align: middle;
+    transition: .5s ease;
+}
+
+.main-btn i:hover {
+    transform: translateX(50%);
+}
+
+.down-arrow{
+    position: absolute;
+    top: 85%;
+    right: 11%;
+}
+
+.down {
+    font-size: 30px;
+    color: #2c2c2c;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 2px 12px;
+}
+
+.down i:hover{
+   color: red;
+   transform: all .42s ease;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 20px 10%;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+}
+
+/* trend-section */
+
+.center-text h2{
+    color: #111;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.center-text span{
+    color: #f00837;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 2rem;
+}
+
+.row{
+    position: relative;
+    transition: all .40s ease;
+}
+
+.row img{
+    width: 100%;
+    height: auto;
+    transition: all .40s ease-in-out;
+}
+
+.row img:hover{
+    transform: scale(0.9);
+    filter: brightness(70%);
+}
+
+.product-text h5 {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: rgb(89, 185, 89);
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+
+.heart-icon {
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    color: red;
+}
+
+.heart-icon:hover{
+    color: red;
+}
+
+.rating{
+   color: rgb(255, 149, 0); 
+}
+
+.price{
+    color: #393939;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.price p{
+    color: #151515;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.client-reviews{
+    background-color: #F3F4F6;
+}
+
+.reviews{
+    text-align: center;
+}
+
+.reviews h3 {
+    color: #111;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 700;
+    text-align: center;
+}
+
+.reviews img {
+    width: 100px;
+    height: auto;
+    border-radius: 50px;
+    margin: 10px 0;
+}
+
+.reviews p{
+    color: #6e6e6e;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.reviews h2{
+    font-size: 22px;
+    color: #000;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 2px;
+}
+
+/*-----update-section-------*/
+
+.up-center-text h2{
+    text-align: center;
+    color: #111;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.cart img{
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.update-cart{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, auto));
+    gap: 1rem;
+}
