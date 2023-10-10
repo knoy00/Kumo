@@ -14,14 +14,23 @@ heartIcons.forEach(icon => {
   });
 });
 
-const availability = document.getElementById("sale");
-const saleElement = document.querySelector(".product-text");
+let menu = document.querySelector("#menu-icon")
+let navmenu = document.querySelector(".navmenu")
 
-function available() {
-  if (availability.textContent === "Available") {
-    saleElement.style.backgroundColor = "red";
-  }
+menu.onclick = () => {
+  menu.classList.toggle("bx-x");
+  navmenu.classList.toggle("open")
 }
 
-available();
+
+// const availability = document.getElementById("sale");
+// const saleElement = document.querySelector(".product-text");
+
+// function available() {
+//   if (availability.textContent === "Available") {
+//     saleElement.style.backgroundColor = "red";
+//   }
+// }
+
+// available();
 
