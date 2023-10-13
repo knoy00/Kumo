@@ -434,4 +434,11 @@ header.sticky{
     .navmenu.open{
         right: 0;
     }
+    .main-text h5{
+        color: white;
+        font-weight: 600;
+    }
+    .main-text p{
+        color: white;
+        font-weight: 600;
 }
